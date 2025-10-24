@@ -16,16 +16,16 @@
 -- 새로운 사용자 계정 생성 (sys : 최고 관리자 계정)
 ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 
-CREATE USER workbook IDENTIFIED BY workbook;
+CREATE USER kh_shop IDENTIFIED BY kh_shop;
 -- 계정 생성 구문(kh_cmh : USERNAME / kh1234 :Password)
 
 
-GRANT RESOURCE, CONNECT TO workbook;
+GRANT RESOURCE, CONNECT TO kh_shop;
 -- 사용자 계정에 권한 부여 설정
 -- RESOURCE: 테이블이나 인덱스 같은 DB 객체를 생성할 권한
 -- CONNECT : DB에 연결하고 로그인 할 수 있는 권한
                                                                                                    
-ALTER USER workbook DEFAULT TABLESPACE SYSTEM QUOTA
+ALTER USER kh_shop DEFAULT TABLESPACE SYSTEM QUOTA
 UNLIMITED ON SYSTEM;
 -- 객체가 생성될 수 있는 공간 할당향 무제한 지정
 
