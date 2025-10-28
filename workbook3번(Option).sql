@@ -17,7 +17,7 @@ ORDER BY STUDENT_NAME;
 SELECT STUDENT_NAME "학생 이름",STUDENT_SSN 
 FROM TB_STUDENT  
 WHERE ABSENCE_YN = 'Y'
-ORDER BY STUDENT_SSN DESC;
+ORDER BY STUDENT_SSN ;
 
 --3. 주소지가 강원도나 경기도인 학생들 중 1900년대 학번을 가진 학생들의 이름과 학번,
 --주소를 이름의 오름차순으로 화면에 출력하시오. 단, 출력헤더에는 "학생이름","학번","거주자 주소"
